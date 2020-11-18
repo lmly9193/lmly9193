@@ -1,0 +1,6 @@
+[submodule "template/gitignore"]
+	path = template/gitignore
+	url = https://github.com/github/gitignore.git
+[submodule "script/doubi"]
+	path = script/doubi
+	url = https://github.com/ToyoDAdoubi/doubi.git

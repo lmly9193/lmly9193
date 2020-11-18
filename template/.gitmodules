@@ -1,0 +1,18 @@
+# command
+# git submodule add <repository> [<path>]</path></repository>
+# git status
+# git submodule init
+# git submodule update
+# git submodule sync
+
+[submodule "libfoo"]
+	path = include/foo
+	url = git://foo.com/git/lib.git
+
+[submodule "libbar"]
+	path = include/bar
+	url = git://bar.com/git/lib.git
+
+[submodule "themes/github-style"]
+	path = themes/github-style
+	url = https://github.com/MeiK2333/github-style.git

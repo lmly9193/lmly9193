@@ -1,0 +1,10 @@
+Description=Aria2 Service
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/aria2c --conf-path=/root/.aria2/aria2.conf --log=/root/.aria2/aria2.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

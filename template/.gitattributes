@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+once.expect text eol=lf
+crontab text eol=lf
+acunetix_trial.sh filter=lfs diff=lfs merge=lfs -binary
+patch_awvs filter=lfs diff=lfs merge=lfs -binary
