@@ -5,3 +5,5 @@
 ## 目錄
 
 * [利用 rclone 同步備份兩個 google drive 帳號](<利用 rclone 同步備份兩個 google drive 帳號/content.md>)
+* [Java SDK 8 安裝筆記](<Java SDK 8 安裝筆記/content.md>)
+* [nohup、&、＞的使用](<nohup、&、＞的使用/content.md>)

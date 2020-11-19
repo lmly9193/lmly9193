@@ -11,6 +11,6 @@ swapon /swapfile
 $swapon -s 檢查作用
 開機自動使用 /swapfile 作為 Swap 空間, 需要修改 /etc/fstab 檔案
 
-```bash
+```shell
 echo "/swapfile swap swap sw 0 0" >> /etc/fstab
 ```

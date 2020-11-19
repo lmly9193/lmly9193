@@ -6,7 +6,7 @@
 
 啟動、停止、重啟
 
-```bash
+```shell
 /etc/init.d/caddy start
 /etc/init.d/caddy stop
 /etc/init.d/caddy restart
@@ -14,12 +14,12 @@
 
 查看狀態
 
-```bash
+```shell
 /etc/init.d/caddy status
 ```
 
 查看Caddy啟動日誌
 
-```bash
+```shell
 tail -f /tmp/caddy.log
 ```
