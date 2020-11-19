@@ -36,7 +36,7 @@ apt-get upgrade -y
 
 # package
 
-pkg=("exa" "screen" "virt-what" "unzip" "neofetch" "git" "curl" "wget" "htop")
+pkg=("exa" "screen" "virt-what" "zip" "unzip" "neofetch" "git" "curl" "wget" "htop")
 
 color white red "你要安裝常用套件嗎 (y/n)?"
 read -p "" CONT
