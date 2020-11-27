@@ -30,8 +30,7 @@ If you are interested in about me or have some questions to ask, welcome [Telegr
 
 ### Cloud Services
 
-* CloudFlare Workers
-* CPanel
+* Cloudflare Workers
 * Firebase
 * Google Analytics
 * Google Cloud Platform (Compute Engine)
@@ -47,6 +46,7 @@ If you are interested in about me or have some questions to ask, welcome [Telegr
 * Nginx
 * Synology
 * Systemd
+* WHM & CPanel
 
 ### Others
 
