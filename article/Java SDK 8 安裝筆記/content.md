@@ -26,9 +26,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.241-b07, mixed mode)
 
 ### 設定環境變數
 
-After installing the JDK, you may need to set JAVA_HOME to your profile:
-For shell or bash: `export JAVA_HOME=path_to_java_home`
-For csh (C shell): `setenv JAVA_HOME=path_to_java_home`
+在安裝完JDK之後，你也需要新增環境變數`JAVA_HOME`到你的個人設定之中：
+shell、bash: `export JAVA_HOME=path_to_java_home`
+csh (C shell): `setenv JAVA_HOME=path_to_java_home`
 
 ### RHEL-based 系統
 
@@ -156,9 +156,9 @@ export JAVA_HOME=/usr/java/jdk1.8.0_version
 
 #### 設定環境變數
 
-After installing the JDK, you may need to set JAVA_HOME to your profile:
-For shell or bash: `export JAVA_HOME=path_to_java_home`
-For csh (C shell): `setenv JAVA_HOME=path_to_java_home`
+在安裝完JDK之後，你也需要新增環境變數`JAVA_HOME`到你的個人設定之中：
+shell、bash: `export JAVA_HOME=path_to_java_home`
+csh (C shell): `setenv JAVA_HOME=path_to_java_home`
 
 #### 建立目錄&解壓縮並安裝Oracle JDK
 
