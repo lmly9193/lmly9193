@@ -11,6 +11,8 @@ If you are interested in about me or have some questions to ask, welcome [Telegr
 
 ## Skills
 
+There is something about my skills, abilities, experience below here, order by alphabet.
+
 ### Frontend
 
 * Bootstrap
@@ -35,7 +37,7 @@ If you are interested in about me or have some questions to ask, welcome [Telegr
 * Google Analytics
 * Google Cloud Platform (Compute Engine)
 * Heroku
-* VPS (Linode, DigitalOcean, etc)
+* VPS (Linode, DigitalOcean, etc.)
 
 ### Server Management
 
@@ -45,8 +47,8 @@ If you are interested in about me or have some questions to ask, welcome [Telegr
 * IIS
 * Nginx
 * Synology
-* Systemd
 * WHM & CPanel
+* XAMPP
 
 ### Others
 
@@ -63,7 +65,6 @@ If you are interested in about me or have some questions to ask, welcome [Telegr
 * phpmyadmin
 * Postman
 * Photoshop
-* XAMPP
 
 ## What's Next
 
