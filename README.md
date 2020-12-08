@@ -22,7 +22,6 @@ There is something about my skills, abilities, experience below here, order by a
 
 ### Backend
 
-* FastRoute
 * Laravel
 * MariaDB
 * MS SQL
@@ -70,6 +69,8 @@ There is something about my skills, abilities, experience below here, order by a
 
 * AWS
 * C#
+* Electron.js
+* FastRoute
 * Go
 * Hugo
 * Kotlin
