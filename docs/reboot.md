@@ -4,15 +4,18 @@
 
 * dandanplay
 * DmitriRender
+* Eagle
+* LosslessCut
 * Media Preview
 * Movavi Video Converter
 * Photoshop
 * PotPlayer
+* SVP 4
 * TiefSee
 * Vicoder
 * VirtualDVD
+* Wondershare UniConverter
 * XnCovert
-* SVP
 
 ## 通訊軟體
 
@@ -23,6 +26,7 @@
 
 ## 開發
 
+* Apifox
 * Docker Desktop
 * FileZilla Pro
 * FiraCode
@@ -31,6 +35,7 @@
 * HTTrack
 * Insomnia
 * Navicat
+* NETworkManager
 * OWASP ZAP
 * Postman
 * SwitchHost!
@@ -54,23 +59,33 @@
 ## 下載&同步
 
 * 百度網盤
+* AirExplorer
 * Google Drive File Stream
 * Internet Download Manager
+* N_m3u8DL
 * MegaDownloader
 * Motrix
+* qBittorrent
 * RaiDrive
+* rclone
+
+## 遠端桌面
+
+* AnyDesk
+* Chrome Remote Desktop
+* mRemoteNG
+* TeamViewer
 
 ## 其他
 
-* AnyDesk
 * Bitwarden
-* Chrome Remote Desktop
+* DroidCamApp
 * Everything
 * Fanhuaji
+* Firewall App Blocker
 * LDPlayer
-* LocaleEmulator
-* mRemoteNG
-* RivaTuner Statistics Server
-* TeamViewer
+* Locale Emulator
 * PowerToys
+* RivaTuner Statistics Server
+* SoftEther VPN
 * VirtualBox
