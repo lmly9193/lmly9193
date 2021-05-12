@@ -4,7 +4,6 @@
 
 * dandanplay
 * DmitriRender
-* Eagle
 * LosslessCut
 * Media Preview
 * Movavi Video Converter
@@ -85,6 +84,7 @@
 * Firewall App Blocker
 * LDPlayer
 * Locale Emulator
+* ProtonVPN
 * PowerToys
 * RivaTuner Statistics Server
 * SoftEther VPN
