@@ -1,31 +1,11 @@
-類型(範圍): 描述
+!Type(Scope[optional]): Title #ID
+# feat, fix, refactor, typo, style, docs, perf, test, chore, secure, revert, wip
 
-## 據脈絡的詳述發生了什麼[問題]或這項變更的[理由]
-#變更原因(Why):
+#Reason:
+#Change: 
 
-
-## 詳述你變更了什麼項目
-#變更項目(What):
-
-
-## 務必詳述解決做法，如果 #變更原因 內含有[問題]。
-#解決方案(How):
-
-
-## 若是有發 Issue 請在這裡連結
+### Footer ###
 #Issue #ID
-
-
-## 提交類型只能為以下列表內的型態
-## wip: 工作中的項目
-## feat: 新增/修改功能
-## fix: 修補臭蟲
-## refactor: 重構/優化結構
-## typo: 修正錯別字
-## style: 修改格式/風格
-## docs: 新增/修改文檔
-## perf: 改善效能
-## test: 新增測試
-## chore: 新增/修改套件、雜事
-## secure: 修補漏洞/增加安全性
-## revert: 撤銷/回朔
+#BREAKING CHANGE:[optional]
+# Before:
+# After:

@@ -19,6 +19,6 @@
 [commit]
 	gpgSign = false
 	cleanup = strip
-	template = "%USERPROFILE%\\.gitmessage.txt"
+	template = "C:/Users/lmly9193/.gitmessage.txt"
 [tag]
 	forceSignAnnotated = false
