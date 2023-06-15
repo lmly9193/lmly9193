@@ -75,4 +75,5 @@ alias untar='tar -zxvf'
 alias vi='vim'
 alias ipinfo='curl https://ipinfo.io/json && echo -e "\n"'
 alias bench='curl -Lso- bench.sh | bash'
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 EOF
