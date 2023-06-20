@@ -3,10 +3,6 @@
 
 ## Experiences
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="right" src="https://github-readme-stats.vercel.app/api?username=lmly9193&count_private=true" width="400">
-</a>
-
 - Bachelor's degree in Optoelectronic Physics - 2019
 - Full-Stack Web Engineer
 
