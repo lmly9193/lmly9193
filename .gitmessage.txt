@@ -1,11 +1,7 @@
-!Type(Scope[optional]): Title #ID
-# feat, fix, refactor, typo, style, docs, perf, test, chore, secure, revert, wip
+!Type: Title
+# wip, feat, fix, refactor, typo, style, docs, perf, test, chore, secure, revert
+[Change]
 
-#Reason:
-#Change: 
 
-### Footer ###
-#Issue #ID
-#BREAKING CHANGE:[optional]
-# Before:
-# After:
+[Reason]
+
