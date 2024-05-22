@@ -1,7 +1,1 @@
-!Type: Title
-# wip, feat, fix, refactor, typo, style, docs, perf, test, chore, secure, revert
-[Change]
-
-
-[Reason]
-
+<wip|feat|fix|refactor|typo|style|docs|perf|test|chore|secure|revert>: <subject>
