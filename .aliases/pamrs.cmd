@@ -1,1 +1,0 @@
-@pa migrate:refresh --seed
