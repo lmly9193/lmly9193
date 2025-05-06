@@ -4,7 +4,7 @@
 # System: Debian/Ubuntu
 # Description: Bash Shell for Debian/Ubuntu
 # Author: lmly9193
-# Usage: curl -Lso- https://bit.ly/lmly9193 | bash && . ~/.bashrc
+# Usage: curl -Lso- https://lmly9193.dev/bashrc | bash && . ~/.bashrc
 #=================================================
 
 # 更新列表
@@ -33,11 +33,6 @@ git config --global user.name "$(whoami)"
 # 一般
 sudo apt install -y screen
 
-# 設置顏色變量
-COLOR_RESET='\[\033[0m\]'          # 重置顏色為終端的預設值
-COLOR_GREEN='\[\033[01;32m\]'      # 綠色，粗體
-COLOR_BLUE='\[\033[01;34m\]'       # 藍色，粗體
-
 cat <<EOF >>~/.bashrc
 
 # ---------------- 使用者自訂 ----------------
@@ -48,8 +43,7 @@ export LANGUAGE=zh_TW.UTF-8
 export LC_ALL=zh_TW.UTF-8
 export LS_OPTIONS='--time-style=long-iso --group-directories-first --color=auto'
 export VISUAL=nano
-export EDITOR=VISUAL
-export PS1='${COLOR_GREEN}\u@\h${COLOR_RESET}:${COLOR_BLUE}\w${COLOR_RESET}\$ '
+export EDITOR='\${VISUAL}'
 
 alias su='sudo -i'
 alias cls='clear'
