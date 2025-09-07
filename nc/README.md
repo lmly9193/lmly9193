@@ -1,14 +1,22 @@
 # NC
 
-## Install
-
-1. Schedule
+## Register/Unregister Task
 
 ```pwsh
-irm https://lmly9193.dev/nc-task | iex
+# 遠端執行(推薦)
+irm https://lmly9193.dev/navicat.ps1 | iex [Install|Uninstall]
+
+# 本地執行
+powershell -ExecutionPolicy Bypass -File .\navicat.ps1 [Install|Uninstall]
+powershell -ExecutionPolicy Bypass -File .\navicat.ps1 -Register [Install|Uninstall]
 ```
 
-2. Once
+## Renew Once
+
 ```pwsh
-irm https://lmly9193.dev/nc-daily | iex
+# 遠端執行(推薦)
+irm https://lmly9193.dev/navicat.ps1 | iex
+
+# 本地執行
+powershell -ExecutionPolicy Bypass -File .\navicat.ps1
 ```
