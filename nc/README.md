@@ -4,7 +4,8 @@
 
 ```pwsh
 # 遠端執行(推薦)
-irm https://lmly9193.dev/navicat.ps1 | iex [Install|Uninstall]
+&([ScriptBlock]::Create((irm "https://lmly9193.dev/navicat"))) [Install|Uninstall]
+&([ScriptBlock]::Create((irm "https://lmly9193.dev/navicat"))) -Register [Install|Uninstall]
 
 # 本地執行
 powershell -ExecutionPolicy Bypass -File .\navicat.ps1 [Install|Uninstall]
@@ -15,7 +16,7 @@ powershell -ExecutionPolicy Bypass -File .\navicat.ps1 -Register [Install|Uninst
 
 ```pwsh
 # 遠端執行(推薦)
-irm https://lmly9193.dev/navicat.ps1 | iex
+irm https://lmly9193.dev/navicat | iex
 
 # 本地執行
 powershell -ExecutionPolicy Bypass -File .\navicat.ps1

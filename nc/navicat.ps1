@@ -2,7 +2,7 @@ param(
     [string]$Register
 )
 
-$ErrorActionPreference = 'SilentlyContinue'
+# $ErrorActionPreference = 'SilentlyContinue'
 
 Add-Type -AssemblyName PresentationCore, PresentationFramework
 
@@ -12,28 +12,11 @@ $ScheduledTask = @{
     TaskPath = '\PremiumSoft\'
 }
 
-if (-not $Register -and $args.Count -gt 0) {
-    $Register = $args[0]
-}
-
-switch ($Register) {
-    'Install' {
-        Uninstall-ScheduledTask($true)
-        Install-ScheduledTask()
-    }
-    'Uninstall' {
-        Uninstall-ScheduledTask()
-    }
-    default {
-        Invoke-RenewTrial($true)
-    }
-}
-
 function Install-ScheduledTask() {
     Write-Host 'Installing Scheduled Task...'
 
     Register-ScheduledTask @ScheduledTask `
-        -Action (New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-NoProfile -WindowStyle Hidden -Command irm $ScriptURL | iex") `
+        -Action (New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-NoProfile -WindowStyle Hidden -Command `"irm $ScriptURL | iex`"") `
         -Trigger (New-ScheduledTaskTrigger -Daily -At 7am) `
         -Principal (New-ScheduledTaskPrincipal -UserId $env:USERNAME) `
         -Settings (New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -RunOnlyIfNetworkAvailable -StartWhenAvailable -RestartCount 3 -RestartInterval (New-TimeSpan -Minutes 1)) `
@@ -80,5 +63,25 @@ function Invoke-RenewTrial($Silent = $false) {
 
     if (-not $Silent) {
         [System.Windows.MessageBox]::Show('Trial Renewed.', 'Success', 'OK', 'Information')
+    }
+}
+
+# Parse Arguments
+
+if (-not $Register -and $args.Count -gt 0) {
+    $Register = $args[0]
+}
+
+# Main Logic
+switch ($Register) {
+    'Install' {
+        Uninstall-ScheduledTask $true
+        Install-ScheduledTask
+    }
+    'Uninstall' {
+        Uninstall-ScheduledTask
+    }
+    default {
+        Invoke-RenewTrial $true
     }
 }
