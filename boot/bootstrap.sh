@@ -9,16 +9,11 @@
 
 sudo apt update
 
-COMMON_PKGS=(
-  # Install locales and Chinese language support
-  locales language-pack-zh-hant language-pack-zh-hant-base fonts-noto-cjk
-  # Network, hardware, compression, editors, git, and general utilities
-  curl wget net-tools nmap ufw htop zip unzip tar nano vim git screen
-)
+COMMON_PKGS=(locales curl wget net-tools nmap ufw htop zip unzip tar nano vim git screen)
 
 # Optimize the code by installing packages in batches of 5 for better performance
 for ((i=0; i<${#COMMON_PKGS[@]}; i+=5)); do
-  sudo apt install -y "${COMMON_PKGS[@]:i:5}"
+    sudo apt install -y "${COMMON_PKGS[@]:i:5}"
 done
 
 # Install fastfetch for system information display
