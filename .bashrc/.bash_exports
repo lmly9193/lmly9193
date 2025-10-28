@@ -1,0 +1,11 @@
+# ~/.bash_exports: executed by bash(1) for non-login shells.
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+export LS_OPTIONS='--time-style=long-iso --group-directories-first --color=auto'
+
+export VISUAL='nano'
+export EDITOR='$VISUAL'

@@ -1,0 +1,43 @@
+# ~/.bash_autoload: executed by bash(1) for non-login shells.
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# Define the URL for fetching bashrc components
+export GH_BASHRC_URL="https://raw.githubusercontent.com/lmly9193/lmly9193/main/.bashrc"
+
+if [[ "$GH_BASHRC_FORCE_UPDATE" == "1" ]]; then
+    rm -f ~/.bash_exports ~/.bash_aliases ~/.bash_functions
+    unset GH_BASHRC_FORCE_UPDATE
+fi
+
+# Download necessary configuration files if they do not exist
+if [[ ! -f ~/.bash_exports ]]; then
+    curl -fsSL "$GH_BASHRC_URL/.bash_exports" -o ~/.bash_exports --retry 3
+fi
+
+if [[ ! -f ~/.bash_aliases ]]; then
+    curl -fsSL "$GH_BASHRC_URL/.bash_aliases" -o ~/.bash_aliases --retry 3
+fi
+
+if [[ ! -f ~/.bash_functions ]]; then
+    curl -fsSL "$GH_BASHRC_URL/.bash_functions" -o ~/.bash_functions --retry 3
+fi
+
+# Source the configuration files if they exist
+if [[ -f ~/.bash_exports ]]; then
+    source ~/.bash_exports
+fi
+
+if [[ -f ~/.bash_aliases ]]; then
+    source ~/.bash_aliases
+fi
+
+if [[ -f ~/.bash_functions ]]; then
+    source ~/.bash_functions
+fi
+
+# Custom configurations can be added below
+en_US   # Set default locale to en_US; use alias 'zh_TW' to switch to zh_TW
