@@ -7,7 +7,7 @@ param(
 Add-Type -AssemblyName PresentationCore, PresentationFramework
 
 $LogPath = "${env:AppData}\lmly9193\PremiumSoft.log"
-$ScriptURL = 'https://lmly9193.dev/navicat'
+$ScriptURL = 'https://gotu.page/navicat'
 $ScheduledTask = @{
     TaskName = 'Renew Trial'
     TaskPath = '\PremiumSoft\'

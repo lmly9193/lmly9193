@@ -6,7 +6,7 @@ if (-not (Test-Path $Root)) {
     New-Item -Path $Root -ItemType Directory
 }
 
-Invoke-WebRequest -Uri "https://lmly9193.dev/nc-daily" | Set-Content -Path "$Root\PremiumSoft.ps1" -Force
+Invoke-WebRequest -Uri "https://gotu.page/nc-daily" | Set-Content -Path "$Root\PremiumSoft.ps1" -Force
 
 $task = @{
     TaskName = 'Renew Trial'

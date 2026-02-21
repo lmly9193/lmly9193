@@ -3,7 +3,7 @@
 #=================================================
 # Ubuntu Bootstrap Script
 # Author: lmly9193
-# Usage: `curl -Lso- https://lmly9193.dev/bashrc | bash`
+# Usage: `curl -Lso- https://gotu.page/bashrc | bash`
 #=================================================
 
 # Check if the script is run on Ubuntu
